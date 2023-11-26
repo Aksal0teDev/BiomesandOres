@@ -34,8 +34,5 @@ public class BiomesAndOres implements ModInitializer
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
 		ModItems.register();
 		ModBlocks.register();
-
 	}
-
-
 }
