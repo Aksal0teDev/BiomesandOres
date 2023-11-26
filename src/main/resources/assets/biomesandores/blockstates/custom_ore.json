@@ -1,19 +1,5 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "biomesandores:block/custom_ore"
-    },
-    "facing=south": {
-      "model":  "biomesandores:block/custom_ore",
-      "y": 180
-    },
-    "facing=west": {
-      "model":  "biomesandores:block/custom_ore",
-      "y": 270
-    },
-    "facing=east": {
-      "model":  "biomesandores:block/custom_ore",
-      "y": 90
-    }
+    "": { "model": "biomesandores:block/custom_ore" }
   }
 }
