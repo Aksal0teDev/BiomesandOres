@@ -15,6 +15,7 @@ public class ModItems
     public static final Item NEW_ITEM = registerItem("new_item", new Item(new Item.Settings()), ModItemsGroup.BAO_GROUP);
     public static final Item BACKPACK = registerItem("backpack", new BackpackItem(new Item.Settings().maxCount(1)), ModItemsGroup.BAO_GROUP);
 
+
     public static Item registerItem(String id, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BiomesAndOres.MOD_ID, id), item);
     }
