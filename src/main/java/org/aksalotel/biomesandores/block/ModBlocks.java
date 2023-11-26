@@ -14,8 +14,8 @@ import org.aksalotel.biomesandores.Items.ModItems;
 import org.aksalotel.biomesandores.Items.ModItemsGroup;
 
 public class ModBlocks {
-    public static final Block CUSTOM_ORE = registerBlock("custom_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool().luminance(6)), ModItemsGroup.BAO_GROUP);
-    public static final Block DEEPSLATE_CUSTOM_ORE = registerBlock("deepslate_custom_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool().luminance(6)), ModItemsGroup.BAO_GROUP);
+    public static final Block CUSTOM_ORE = registerBlock("custom_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool().luminance(0).nonOpaque()), ModItemsGroup.BAO_GROUP);
+    public static final Block DEEPSLATE_CUSTOM_ORE = registerBlock("deepslate_custom_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool().luminance(0)), ModItemsGroup.BAO_GROUP);
 
 
     private static Block registerBlock(String id, Block block) {

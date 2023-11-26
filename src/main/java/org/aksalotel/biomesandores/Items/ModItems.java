@@ -10,8 +10,11 @@ import org.aksalotel.biomesandores.BiomesAndOres;
 
 public class ModItems
 {
-
+  //создание предметов
     public static final Item NEW_ITEM = registerItem("new_item", new Item(new Item.Settings()), ModItemsGroup.BAO_GROUP);
+
+    public static final Item MENU_ITEM = registerItem("menu_item", new Item(new Item.Settings()), ModItemsGroup.BAO_GROUP);
+
     public static Item registerItem(String id, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BiomesAndOres.MOD_ID, id), item);
     }
