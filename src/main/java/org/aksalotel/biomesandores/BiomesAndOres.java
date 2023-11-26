@@ -25,15 +25,9 @@ import java.util.Arrays;
 
 public class BiomesAndOres implements ModInitializer
 {
-
-
-
-
-
 	public  static  final String  MOD_ID  = "biomesandores";
-
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static final RegistryKey<PlacedFeature> CUSTOM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,  new Identifier("biomesandores:custom_ore","ore_custom"));
+	public static final RegistryKey<PlacedFeature> CUSTOM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE,  new Identifier(MOD_ID,"ore_custom"));
 
 	@Override
 	public void onInitialize() {
@@ -42,8 +36,5 @@ public class BiomesAndOres implements ModInitializer
 		ModBlocks.register();
 
 	}
-
-
-
 
 }
