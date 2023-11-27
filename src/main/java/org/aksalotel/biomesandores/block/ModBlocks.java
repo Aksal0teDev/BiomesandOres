@@ -2,6 +2,7 @@ package org.aksalotel.biomesandores.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.FurnaceBlock;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -12,10 +13,14 @@ import net.minecraft.util.Identifier;
 import org.aksalotel.biomesandores.BiomesAndOres;
 import org.aksalotel.biomesandores.Items.ModItems;
 import org.aksalotel.biomesandores.Items.ModItemsGroup;
+import org.aksalotel.biomesandores.block.multiblock.FurnaceController;
 
 public class ModBlocks {
     public static final Block CUSTOM_ORE = registerBlock("custom_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool().luminance(0).nonOpaque()), ModItemsGroup.BAO_GROUP);
     public static final Block DEEPSLATE_CUSTOM_ORE = registerBlock("deepslate_custom_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool().luminance(0)), ModItemsGroup.BAO_GROUP);
+
+    public static final Block FURNACE_PART = registerBlock("furnace_part", new FurnaceBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool().luminance(0)), ModItemsGroup.BAO_GROUP);
+    public static final Block FURNACE_CONTROLLER = registerBlock("furnace_controller", new FurnaceController(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool().luminance(0)), ModItemsGroup.BAO_GROUP);
 
 
     private static Block registerBlock(String id, Block block) {
